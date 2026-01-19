@@ -13,7 +13,8 @@ This repository contains the code and analysis pipeline for studying the **bidir
 2. **Negative Impact**: How LLMs might contribute to mental health challenges (anxiety, addiction, misinformation, etc.)
 
 The research framework to implement the study is presented below. 
-<img width="1256" height="624" alt="framework" src="https://github.com/user-attachments/assets/6bce3c5a-a723-4657-be34-6a2ba67dccbe" />
+<img width="1256" height="624" alt="framework" src="https://github.com/user-attachments/assets/b5055d3d-6e77-4141-b213-1cefda14f3b8" />
+
 
 
 ## Repository Structure
