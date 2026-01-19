@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Data files (not uploaded to GitHub)
+data/*
+!data/.gitkeep
+*.csv
+*.xlsx
+*.xls
+*.jsonl
+*.json
+!batch_files/sample*.json
+!mappings/*.json
+
+# Results and outputs
+result/*
+!result/.gitkeep
+output/
+*.pkl
+*.pickle
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude Code
+.claude/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Large files
+*.pdf
+*.png
+figures/paper_figures/*
+!figures/paper_figures/.gitkeep
