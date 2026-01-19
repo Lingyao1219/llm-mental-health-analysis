@@ -12,6 +12,10 @@ This repository contains the code and analysis pipeline for studying the **bidir
 1. **Positive Impact**: How people use LLMs (ChatGPT, Claude, Gemini, etc.) for mental health support, therapy, and coping
 2. **Negative Impact**: How LLMs might contribute to mental health challenges (anxiety, addiction, misinformation, etc.)
 
+The research framework to implement the study is presented below. 
+<img width="1256" height="624" alt="framework" src="https://github.com/user-attachments/assets/6bce3c5a-a723-4657-be34-6a2ba67dccbe" />
+
+
 ## Repository Structure
 
 ```
@@ -94,7 +98,7 @@ echo "OPENAI_API_KEY=your-api-key-here" > .env
 
 ### 1. Data Processing
 
-Place your JSONL data files in the `data/` folder. Each line should be a JSON object with at least a `Full Text` field.
+Place JSONL data files in the `data/` folder. Each line should be a JSON object with at least a `Full Text` field. 
 
 Run the main processing script:
 ```bash
@@ -196,7 +200,7 @@ The system only extracts information when there is a **direct relationship** bet
 Edit [src/core/config.py](src/core/config.py) to customize:
 
 ```python
-MODEL_NAME = 'gpt-4o-mini'      # OpenAI model to use
+MODEL_NAME = 'gpt-4.1-mini'      # OpenAI model to use
 TEMPERATURE = 0.0               # Temperature for deterministic outputs
 TEXT_COLUMN = 'Full Text'      # Column name in input data
 OUTPUT_FOLDER = "result/"       # Output directory
@@ -225,12 +229,11 @@ We identify 12 core human values based on Value-Sensitive Design principles:
 If you use this code or data in your research, please cite:
 
 ```bibtex
-@inproceedings{llm-mental-2026,
-  title={Bidirectional Impact Analysis of Large Language Models on Mental Health},
-  author={Your Name and Others},
-  booktitle={Proceedings of the ACM Web Conference 2026},
-  year={2026},
-  organization={ACM}
+@article{li2025llm,
+  title={LLM Use for Mental Health: Crowdsourcing Users' Sentiment-based Perspectives and Values from Social Discussions},
+  author={Li, Lingyao and Huang, Xiaoshan and Ma, Renkai and Zhang, Ben Zefeng and Wu, Haolun and Yang, Fan and Chen, Chen},
+  journal={arXiv preprint arXiv:2512.07797},
+  year={2025}
 }
 ```
 
@@ -238,14 +241,10 @@ If you use this code or data in your research, please cite:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
-
-This work has been accepted to the **2026 ACM Web Conference (WWW '26)**.
-
 ## Contact
 
-For questions or issues, please open an issue on GitHub or contact [your-email@domain.com].
+For questions or issues, please open an issue on GitHub or contact [lingyaol@usf.edu, xiaoshan.huang@mail.mcgill.ca, renkai.ma@uc.edu].
 
 ---
 
-**Disclaimer**: This research tool is for academic purposes only. It does not provide medical advice. If you or someone you know is experiencing mental health issues, please seek help from qualified mental health professionals.
+**Disclaimer**: This research result is for academic purposes only. It does not imply any medical advice of using LLM for mental health conditions. If you or someone you know is experiencing mental health issues, please seek help from qualified mental health professionals.
